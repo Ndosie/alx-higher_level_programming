@@ -9,7 +9,6 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *current;
-	listint_t *temp;
 
 	current = list;
 	while (current->next)
