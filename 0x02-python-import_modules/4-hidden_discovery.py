@@ -6,4 +6,4 @@ if __name__ == "__main__":
         if a[:2] == "__":
             continue
 
-    print(a)
+        print(a)
