@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-for i in range(100):
-    if i == 0:
-        continue
-    elif i // 10 == i % 10:
-        continue
-    print("{:02d}, ".format(i), end="")
+for i in range(10):
+    for j in range(i + 1, 10):
+        if i == 8:
+            print("{}{}".format(i, j))
+        else:
+            print("{}{}, ".format(i, j), end="")
