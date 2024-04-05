@@ -4,7 +4,7 @@ def roman_to_int(roman_string):
     result = 0
     i = 0
 
-    if roman_string is None or !isinstance(roman_string, str):
+    if roman_string is None or isinstance(roman_string, int):
         return 0
 
     while i < len(roman_string):
