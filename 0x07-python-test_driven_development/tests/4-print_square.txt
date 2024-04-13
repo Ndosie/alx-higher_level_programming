@@ -21,7 +21,6 @@ Passing size zero it will print empty string
 ::
 
 	>>> print_square(0)
-	<BLANKLINE>
 
 Passing size less than zero it will raise ValueError
 
