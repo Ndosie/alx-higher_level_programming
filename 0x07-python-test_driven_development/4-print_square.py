@@ -17,12 +17,12 @@ For example
 def print_square(size):
     """Print # in square shape according to size"""
 
-    if type(size) != int:
+    if not isinstance(size, int):
         raise TypeError('size must be an integer')
     if size < 0:
         raise ValueError('size must be >= 0')
     if size == 0:
-        print("")
+        print()
 
     for i in range(size):
         print('#' * size)
