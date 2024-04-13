@@ -1,0 +1,46 @@
+================================
+How to use 5-text_indentation.py
+================================
+
+This library has only one function `text_indentation(text)` which accepts
+`text` as string argument and prints it and prints newline after '.', '?' and ':'.
+
+Strings
+=======
+
+::
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+	>>> text_indentation("Print me. But do not: forget? to add newline")
+	Print me.
+	<BLANKLINE>
+	But do not:
+	<BLANKLINE>
+	forget?
+	<BLANKLINE>
+	to add newline
+
+Passing `text` with blackline. prints nothing
+
+::
+
+	>>> text_indentation("\n")
+	<BLANKLINE>
+	
+Passing no `text` raises TypeError
+
+::
+	>>> text_indentation()
+	Traceback (most recent call last):
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Non Strings
+===========
+
+Passing non string argument raises TypeError
+
+::
+
+	>>> text_indentation(10)
+	Traceback (most recent call last):
+	TypeError: text must be a string
