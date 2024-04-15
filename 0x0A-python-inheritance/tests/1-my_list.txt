@@ -1,0 +1,36 @@
+====================
+MyList class tests
+====================
+
+MyList inherits from list class and prints a created list
+in ascending order.
+
+Checking if MyList class inherits from list
+::
+	>>> MyList = __import__('1-my_list').MyList
+	>>> issubclass(MyList, list)
+	True
+
+Checking that MyList can create a list and print it in
+ascending order.
+::
+        >>> l = MyList()
+        >>> l.append(4)
+        >>> l.append(9)
+        >>> l.append(2)
+        >>> l.append(1)
+        >>> l.print_sorted()
+        [1, 2, 4, 9]
+
+Checking that MyList can work with empty list.
+::
+        >>> l = MyList()
+        >>> l.print_sorted()
+        []
+
+Checking that print_sorted method when given argument raises
+TypeError
+::
+        >>> l.print_sorted(2)
+        Traceback (most recent call last):
+        TypeError: print_sorted() takes 1 positional argument but 2 were given
