@@ -9,7 +9,7 @@ written.
 
 
 def append_write(filename="", text=""):
-    """Appends text to a file"""
+    """Appends text to the end of a UTF8 text file"""
 
     with open(filename, mode='a', encoding='utf-8') as f:
        return f.write(text)
