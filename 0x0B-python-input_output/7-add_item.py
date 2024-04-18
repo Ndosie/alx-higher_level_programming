@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""This is 7-add_item module, a script that reads arguments
-and save them in Json file as a list"""
+"""
+This is 7-add_item module, a script that reads arguments
+and save them in Json file as a list.
+"""
 import sys
 
 
