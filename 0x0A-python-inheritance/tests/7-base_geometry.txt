@@ -30,6 +30,36 @@ Calling integer_validator method with string
 	Traceback (most recent call last):
         TypeError: age must be an integer
 
+Calling integer_validator method with tuple
+::
+        >>> bg.integer_validator('age', (3,))
+        Traceback (most recent call last):
+        TypeError: age must be an integer
+
+Calling integer_validator method with list
+::
+        >>> bg.integer_validator('age', [3])
+        Traceback (most recent call last):
+        TypeError: age must be an integer
+
+Calling integer_validator method with bool
+::
+        >>> bg.integer_validator('age', True)
+
+
+Calling integer_validator method with set
+::
+        >>> bg.integer_validator('age', {2,3})
+        Traceback (most recent call last):
+        TypeError: age must be an integer
+
+
+Calling integer_validator method with None
+::
+        >>> bg.integer_validator('age', None)
+        Traceback (most recent call last):
+        TypeError: age must be an integer
+
 Calling integer_validator method with value zero
 ::
 	>>> bg.integer_validator('age', 0)
