@@ -2,9 +2,9 @@
 """
 This is 3-is_kind_of_class module.
 
-The 3-is_kind_of_class module has one function ``is_kind_of_class(obj, a_class)``
-which True if `obj` is an instance of `a_class` or a class that inherited from
-otherwise False.
+The 3-is_kind_of_class module has one function ``is_kind_of_class
+(obj, a_class)`` which True if `obj` is an instance of `a_class`
+or a class that inherited from otherwise False.
 """
 
 
