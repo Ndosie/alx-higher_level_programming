@@ -53,7 +53,7 @@ class Rectangle:
 
         s_rep = ""
         for i in range(self.height):
-            s_rep += "{}".format(Rectangle.print_symbol * self.width)
+            s_rep += "{}".format(self.print_symbol * self.width)
             if i != self.height - 1:
                 s_rep += "\n"
         return s_rep
