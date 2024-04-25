@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class."""
+"""
+This is 8-rectangle module.
+
+It defines a Rectangle class.
+"""
 
 
 class Rectangle:
