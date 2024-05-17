@@ -16,11 +16,13 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    
     @property
     def width(self):
         """Get width of a rectangle"""
         return self.__width
 
+    
     @width.setter
     def width(self, value):
         """Set width of a rectangle"""
@@ -30,11 +32,13 @@ class Rectangle(Base):
             raise ValueError('width must be > 0')
         self.__width = value
 
+    
     @property
     def height(self):
         """Get height of a rectangle"""
         return self.__height
 
+    
     @height.setter
     def height(self, value):
         """Set height of a rectangle"""
@@ -44,11 +48,13 @@ class Rectangle(Base):
             raise ValueError('height must be > 0')
         self.__height = value
 
+    
     @property
     def x(self):
         """Get x coordinate of a rectangle"""
         return self.__x
 
+    
     @x.setter
     def x(self, value):
         """Set x coordinate of a rectangle"""
@@ -58,11 +64,13 @@ class Rectangle(Base):
             raise ValueError('x must be >= 0')
         self.__x = value
 
+    
     @property
     def y(self):
         """Get y coordinate of a rectangle"""
         return self.__y
 
+    
     @y.setter
     def y(self, value):
         """Set y coordinate of a rectangle"""
@@ -72,9 +80,11 @@ class Rectangle(Base):
             raise ValueError('y must be >= 0')
         self.__y = value
 
+    
     def area(self):
         """Returns the value of a Rectangle instance"""
         return self.width * self.height
+
 
     def display(self):
         """Displays rectangle using # symbol"""
@@ -84,6 +94,16 @@ class Rectangle(Base):
             for i in range(self.x):
                 print(" ", end="")
             print("{}".format("#" * self.width))
+
+
+    def update(self, *args):
+        """Updates rectange objects attributes"""
+        self.id = args[0]
+        self.width = args[1]
+        self.height = args[2]
+        self.x = args[3]
+        self.y = args[4]
+
 
     def __str__(self):
         """Returns rectangle representation as string"""
