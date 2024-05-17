@@ -85,7 +85,7 @@ class Rectangle(Base):
                 print(" ", end="")
             print("{}".format("#" * self.width))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Updates rectange objects attributes"""
         if args and len(args) != 0:
             i = 0
