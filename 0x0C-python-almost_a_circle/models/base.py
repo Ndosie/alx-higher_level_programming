@@ -58,7 +58,7 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """Return list of instances from list of json strings"""
-        filaname = cls.__name__ + ".json"
+        filename = cls.__name__ + ".json"
         try:
             with open(filename, mode="r", encoding="utf-8") as f:
                 dicts = Base.from_json_string(f.read())
