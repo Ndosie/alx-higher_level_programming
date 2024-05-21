@@ -63,5 +63,5 @@ class Base:
             with open(filename, mode="r", encoding="utf-8") as f:
                 dicts = Base.from_json_string(f.read())
                 return [cls.create(**d) for d in dicts]
-        except I0Error:
+        except FileNotFoundError:
             return []
