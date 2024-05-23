@@ -37,7 +37,7 @@ class TestRectangle_instantiation(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             Rectangle(2, 3, "1")
 
-    def test_string_height(self):
+    def test_string_y(self):
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
             Rectangle(2, 3, 1, "2")
 
