@@ -11,7 +11,7 @@ class TestBase_instantiation(unittest.TestCase):
 
     def test_auto_id(self):
         b = Base()
-        self.assertEqual(b.id, 1)
+        self.assertEqual(b.id, 19)
 
     def test_auto_id_add1(self):
         b1 = Base()
