@@ -10,8 +10,9 @@ class TestBase_instantiation(unittest.TestCase):
     """Testing instantiation of Base class"""
 
     def test_auto_id(self):
-        b = Base()
-        self.assertEqual(b.id, 19)
+        b1 = Base()
+        b2 = Base()
+        self.assertEqual(b.id, b2.id - 1)
 
     def test_auto_id_add1(self):
         b1 = Base()
