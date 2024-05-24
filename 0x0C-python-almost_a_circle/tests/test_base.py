@@ -9,16 +9,14 @@ from models.square import Square
 class TestBase_instantiation(unittest.TestCase):
     """Testing instantiation of Base class"""
 
+    def test_auto_id(self):
+        b = Base()
+        self.assertEqual(b.id, 1)
+
     def test_auto_id_add1(self):
         b1 = Base()
         b2 = Base()
         self.assertEqual(b1.id, b2.id - 1)
-
-    def test_auto_id_add2(self):
-        b1 = Base()
-        b2 = Base()
-        b3 = Base()
-        self.assertEqual(b1.id, b3.id - 2)
 
     def test_unique_id(self):
         b = Base(3)
