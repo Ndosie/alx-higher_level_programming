@@ -6,7 +6,7 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 
-class TestBase_instantiation(unittest.TestCase):
+class TestBase_1instantiation(unittest.TestCase):
     """Testing instantiation of Base class"""
 
     def test_auto_id(self):
