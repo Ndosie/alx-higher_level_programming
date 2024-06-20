@@ -5,9 +5,6 @@ const args = process.argv;
 if (args.length < 4) {
   console.log(0);
 } else {
-  if (args[3] > args[2]) {
-    console.log(args[3]);
-  } else {
-    console.log(args[2]);
-  }
+  const arrSlice = args.slice(2);
+  console.log(arrSlice.sort(function (a, b) { return b - a; })[1]);
 }
